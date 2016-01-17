@@ -24,5 +24,15 @@ namespace FightEngine
                 LifePoints = -c1.LifePoints
             };
         }
+
+        public void AddAttributesWithMaximum(CharacterFluentAttributes addableAttirbutes, CharacterFluentAttributes maximumAttributes)
+        {
+            this.LifePoints += addableAttirbutes.LifePoints;
+
+            if(this.LifePoints > maximumAttributes.LifePoints)
+            {
+                this.LifePoints = maximumAttributes.LifePoints;
+            }
+        }
     }
 }

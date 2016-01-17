@@ -35,7 +35,7 @@ namespace FightEngine.Tests.TestData
             Requirements = new List<System.Security.Claims.Claim>
                 {
                     new Claim(RpgClaimTypes.Type, "Humanoid"),
-                    new Claim(RpgClaimTypes.Extremities, "Hand")
+                    new Claim(RpgClaimTypes.Slot, "Hand")
                 }
         };
 
@@ -87,7 +87,7 @@ namespace FightEngine.Tests.TestData
             Requirements = new List<System.Security.Claims.Claim>
                 {
                     new Claim(RpgClaimTypes.Type, "Humanoid"),
-                    new Claim(RpgClaimTypes.Extremities, "Hand")
+                    new Claim(RpgClaimTypes.Slot, "Hand")
                 }
         };
     }

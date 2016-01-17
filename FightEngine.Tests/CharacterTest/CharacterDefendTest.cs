@@ -29,7 +29,7 @@ namespace FightEngine.Tests.CharacterTest
         {
             var empty = new Character();
             Action defend = () => empty.Defend(4);
-            defend.ShouldThrow<ArgumentNullException>().WithMessage($"{nameof(empty.Attributes)} is Null!");
+            defend.ShouldThrow<NullReferenceException>();
         }
     }
 }

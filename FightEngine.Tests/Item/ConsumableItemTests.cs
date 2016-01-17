@@ -62,6 +62,7 @@ namespace FightEngine.Tests.Item
             var baseElve = new TestCharacters().Elve;
             elve.BaseFluentAttributes = baseElve.BaseFluentAttributes;
             elve.CurrentFluentAttributes = baseElve.CurrentFluentAttributes;
+            elve.Features = baseElve.Features;
             elve.GetModifiedFluentAttributes().Returns(new CharacterFluentAttributes { LifePoints = 20 });
             
             healthPotion.Apply(elve);

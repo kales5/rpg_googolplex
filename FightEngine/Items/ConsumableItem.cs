@@ -12,7 +12,10 @@ namespace FightEngine.Items
 
         public void Apply(Character character)
         {
-            throw new NotImplementedException();
+            CheckRequirements(character.Features);
+
+            var maximumFluentAttributes = character.GetModifiedFluentAttributes();
+            character.CurrentFluentAttributes.AddAttributesWithMaximum(FluentAttributesEffekts, maximumFluentAttributes);
         }
     }
 }

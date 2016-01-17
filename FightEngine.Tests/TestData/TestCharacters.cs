@@ -33,10 +33,10 @@ namespace FightEngine.Tests.TestData
                 {
                     new Claim(RpgClaimTypes.Type, "Humanoid"),
                     new Claim(RpgClaimTypes.Race, "Human"),
-                    new Claim(RpgClaimTypes.Extremities, "Hand"),
-                    new Claim(RpgClaimTypes.Extremities, "Hand"),
-                    new Claim(RpgClaimTypes.Extremities, "HumanoidTorso"),
-                    new Claim(RpgClaimTypes.Extremities, "Head"),
+                    new Claim(RpgClaimTypes.Slot, "Hand"),
+                    new Claim(RpgClaimTypes.Slot, "Hand"),
+                    new Claim(RpgClaimTypes.Slot, "HumanoidTorso"),
+                    new Claim(RpgClaimTypes.Slot, "Head"),
                 }
         };
 
@@ -60,10 +60,10 @@ namespace FightEngine.Tests.TestData
                 {
                     new Claim(RpgClaimTypes.Type, "Humanoid"),
                     new Claim(RpgClaimTypes.Race, "Elve"),
-                    new Claim(RpgClaimTypes.Extremities, "Hand"),
-                    new Claim(RpgClaimTypes.Extremities, "Hand"),
-                    new Claim(RpgClaimTypes.Extremities, "HumanoidTorso"),
-                    new Claim(RpgClaimTypes.Extremities, "Head"),
+                    new Claim(RpgClaimTypes.Slot, "Hand"),
+                    new Claim(RpgClaimTypes.Slot, "Hand"),
+                    new Claim(RpgClaimTypes.Slot, "HumanoidTorso"),
+                    new Claim(RpgClaimTypes.Slot, "Head"),
                 }
         };
         public Character Wolf = new Character

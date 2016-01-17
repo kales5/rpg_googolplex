@@ -43,7 +43,7 @@ namespace FightEngine.Tests.CharacterTest
             var human = new TestCharacters().InjuerdHuman;
 
             Action attack = () => human.Attack(human);
-            attack.ShouldThrow<InvalidOperationException>().WithMessage($"Character {human.Name} can not attack itself");
+            attack.ShouldThrow<InvalidOperationException>().WithMessage("Character can not Attack it self!");
         }
 
         [Fact]
@@ -52,7 +52,7 @@ namespace FightEngine.Tests.CharacterTest
             var human = new TestCharacters().InjuerdHuman;
 
             Action attack = () => human.Attack(null);
-            attack.ShouldThrow<ArgumentNullException>().WithMessage($"Character {human.Name} can not attack null");
+            attack.ShouldThrow<NullReferenceException>();
         }
 
         [Fact]
@@ -61,7 +61,7 @@ namespace FightEngine.Tests.CharacterTest
             var human = new TestCharacters().InjuerdHuman;
             var emptyCharacter = new Character();
             Action attack = () => human.Attack(emptyCharacter);
-            attack.ShouldThrow<ArgumentNullException>().WithMessage($"Character {human.Name} can not attack Empty Character");
+            attack.ShouldThrow<NullReferenceException>();
         }
 
         [Fact]
@@ -70,7 +70,7 @@ namespace FightEngine.Tests.CharacterTest
             var human = new TestCharacters().InjuerdHuman;
             var emptyCharacter = new Character();
             Action attack = () => emptyCharacter.Attack(human);
-            attack.ShouldThrow<ArgumentNullException>().WithMessage($"Empty Character can not attack");
+            attack.ShouldThrow<NullReferenceException>();
         }
 
         [Fact]
@@ -80,7 +80,7 @@ namespace FightEngine.Tests.CharacterTest
             var emptyCharacter = new Character();
             var emptyCharacter2 = new Character();
             Action attack = () => emptyCharacter.Attack(emptyCharacter2);
-            attack.ShouldThrow<ArgumentNullException>().WithMessage($"Empty Character can not attack");
+            attack.ShouldThrow<NullReferenceException>();
         }
 
         [Fact]
@@ -88,7 +88,7 @@ namespace FightEngine.Tests.CharacterTest
         {
             var emptyCharacter = new Character();
             Action attack = () => emptyCharacter.Attack(null);
-            attack.ShouldThrow<ArgumentNullException>().WithMessage($"Empty Character can not attack");
+            attack.ShouldThrow<NullReferenceException>();
         }
 
         [Fact]
@@ -96,7 +96,7 @@ namespace FightEngine.Tests.CharacterTest
         {
             var emptyCharacter = new Character();
             Action attack = () => emptyCharacter.Attack(emptyCharacter);
-            attack.ShouldThrow<ArgumentNullException>().WithMessage($"Empty Character can not attack");
+            attack.ShouldThrow<InvalidOperationException>().WithMessage("Character can not Attack it self!");
         }
     }
 }

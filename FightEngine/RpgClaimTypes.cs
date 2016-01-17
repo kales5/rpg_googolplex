@@ -7,6 +7,6 @@
         //Like Animal, Humaniod ect
         public static string Type = "Type";
         //like Hand, Legs, Head ect.
-        public static string Extremities= "Extremities";
+        public static string Slot= "Slot";
     }
 }
