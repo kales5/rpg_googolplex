@@ -1,0 +1,5 @@
+C:\Users\Simon\Documents\GitHub\rpg_googolplex\FightEngine\bin\Debug\FightEngine.dll
+C:\Users\Simon\Documents\GitHub\rpg_googolplex\FightEngine\bin\Debug\FightEngine.pdb
+C:\Users\Simon\Documents\GitHub\rpg_googolplex\FightEngine\obj\Debug\FightEngine.dll
+C:\Users\Simon\Documents\GitHub\rpg_googolplex\FightEngine\obj\Debug\FightEngine.pdb
+C:\Users\Simon\Documents\GitHub\rpg_googolplex\FightEngine\obj\Debug\FightEngine.csprojResolveAssemblyReference.cache
